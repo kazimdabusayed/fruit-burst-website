@@ -5,14 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Burst</title>
     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
-    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-
+    <script src="https://kit.fontawesome.com/50528f2296.js" crossorigin="anonymous"></script>
     <script>
         tailwind.config = {
             theme: {
@@ -169,8 +168,167 @@
             </div>
         </div>
         <!-- deal card -->
-        <div>
-
+        <div class="my-12 grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <!-- Apple card -->
+            <div class="space-y-8 text-center flex flex-col items-center rounded-lg border-2 border-[#00000010] drop-shadow-lg py-2 lg:py-6">
+                <img class="w-[105px] h-[]" src="./images/fruit6.png" alt="">
+                <h3 class="font-bold text-2xl text-[#121212]">12.90$ - 18.85$</h3>
+                <div class="h-[2px] bg-[#00000010] w-[60%]"></div>
+                <p class="">Apple</p>
+                <div>
+                    <i class="fa-solid fa-star text-[#F85559]"></i>
+                    <i class="fa-regular fa-star-half-stroke  text-[#F85559]"></i>
+                    <i class="fa-regular fa-star  text-[#F85559]"></i>
+                    <i class="fa-regular fa-star  text-[#F85559]"></i>
+                    <i class="fa-regular fa-star  text-[#F85559]"></i>
+                </div>
+                <!-- details action button -->
+                <div>
+                    <button class="text-[#F85559]" onclick="my_modal_1.showModal()">Details</button>
+                    <dialog id="my_modal_1" class="modal modal-center">
+                        <form method="dialog" class="modal-box flex flex-col justify-center items-center max-h-[450px] max-w-[400px] py-4 lg:py-8">
+                            <!-- modal Content -->
+                            <div class="flex flex-col items-center space-y-4">
+                                <img class="" src="./images/fruit6.png" alt="">
+                                <h2 class="text-3xl font-extrabold my-4">Apple</h2>
+                                <p class="text-[#18181860] ">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                <div>
+                                    <i class="fa-solid fa-star text-[#F85559]"></i>
+                                    <i class="fa-regular fa-star-half-stroke  text-[#F85559]"></i>
+                                    <i class="fa-regular fa-star  text-[#F85559]"></i>
+                                    <i class="fa-regular fa-star  text-[#F85559]"></i>
+                                    <i class="fa-regular fa-star  text-[#F85559]"></i>
+                                </div>
+                            </div>
+                            <!-- modal action button -->
+                            <div class="modal-action flex justify-evenly items-center">
+                                <button class="btn rounded-lg border-2 border-[#F85559] bg-transparent text-[#F85559] hover:bg-transparent hover:border-red-500">Close</button>
+                                <a class="btn rounded-lg bg-[#F85559] hover:bg-red-500 text-white capitalize">Buy Now</a>
+                            </div>
+                        </form>
+                    </dialog>
+                </div>
+            </div>
+            <!-- Orange card -->
+            <div class="space-y-8 text-center flex flex-col items-center rounded-lg border-2 border-[#00000010] drop-shadow-lg py-2 lg:py-6">
+                <img class="w-[130px]" src="./images/fruit7.png" alt="">
+                <h3 class="font-bold text-2xl text-[#121212]">12.90$ - 18.85$</h3>
+                <div class="h-[2px] bg-[#00000010] w-[60%]"></div>
+                <p class="">Orange</p>
+                <div>
+                    <i class="fa-solid fa-star text-[#F85559]"></i>
+                    <i class="fa-regular fa-star-half-stroke  text-[#F85559]"></i>
+                    <i class="fa-regular fa-star  text-[#F85559]"></i>
+                    <i class="fa-regular fa-star  text-[#F85559]"></i>
+                    <i class="fa-regular fa-star  text-[#F85559]"></i>
+                </div>
+                <!-- details action button -->
+                <div>
+                    <button class="text-[#F85559]" onclick="my_modal_2.showModal()">Details</button>
+                    <dialog id="my_modal_2" class="modal modal-center">
+                        <form method="dialog" class="modal-box flex flex-col justify-center items-center max-h-[450px] max-w-[400px] py-4 lg:py-8">
+                            <!-- modal Content -->
+                            <div class="flex flex-col items-center space-y-4">
+                                <img class="" src="./images/fruit7.png" alt="">
+                                <h2 class="text-3xl font-extrabold my-4">Orange</h2>
+                                <p class="text-[#18181860] ">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                <div>
+                                    <i class="fa-solid fa-star text-[#F85559]"></i>
+                                    <i class="fa-regular fa-star-half-stroke  text-[#F85559]"></i>
+                                    <i class="fa-regular fa-star  text-[#F85559]"></i>
+                                    <i class="fa-regular fa-star  text-[#F85559]"></i>
+                                    <i class="fa-regular fa-star  text-[#F85559]"></i>
+                                </div>
+                            </div>
+                            <!-- modal action button -->
+                            <div class="modal-action flex justify-evenly items-center">
+                                <button class="btn rounded-lg border-2 border-[#F85559] bg-transparent text-[#F85559] hover:bg-transparent hover:border-red-500">Close</button>
+                                <a class="btn rounded-lg bg-[#F85559] hover:bg-red-500 text-white capitalize">Buy Now</a>
+                            </div>
+                        </form>
+                    </dialog>
+                </div>
+            </div>
+            <!-- Red Deagon card -->
+            <div class="space-y-8 text-center flex flex-col items-center rounded-lg border-2 border-[#00000010] drop-shadow-lg py-2 lg:py-6">
+                <img class="w-[130px]" src="./images/fruit8.png" alt="">
+                <h3 class="font-bold text-2xl text-[#121212]">12.90$ - 18.85$</h3>
+                <div class="h-[2px] bg-[#00000010] w-[60%]"></div>
+                <p class="">Red Deagon</p>
+                <div>
+                    <i class="fa-solid fa-star text-[#F85559]"></i>
+                    <i class="fa-regular fa-star-half-stroke  text-[#F85559]"></i>
+                    <i class="fa-regular fa-star  text-[#F85559]"></i>
+                    <i class="fa-regular fa-star  text-[#F85559]"></i>
+                    <i class="fa-regular fa-star  text-[#F85559]"></i>
+                </div>
+                <!-- details action button -->
+                <div>
+                    <button class="text-[#F85559]" onclick="my_modal_3.showModal()">Details</button>
+                    <dialog id="my_modal_3" class="modal modal-center">
+                        <form method="dialog" class="modal-box flex flex-col justify-center items-center max-h-[450px] max-w-[400px] py-4 lg:py-8">
+                            <!-- modal Content -->
+                            <div class="flex flex-col items-center space-y-4">
+                                <img class="" src="./images/fruit8.png" alt="">
+                                <h2 class="text-3xl font-extrabold my-4">Red Deagon</h2>
+                                <p class="text-[#18181860] ">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                <div>
+                                    <i class="fa-solid fa-star text-[#F85559]"></i>
+                                    <i class="fa-regular fa-star-half-stroke  text-[#F85559]"></i>
+                                    <i class="fa-regular fa-star  text-[#F85559]"></i>
+                                    <i class="fa-regular fa-star  text-[#F85559]"></i>
+                                    <i class="fa-regular fa-star  text-[#F85559]"></i>
+                                </div>
+                            </div>
+                            <!-- modal action button -->
+                            <div class="modal-action flex justify-evenly items-center">
+                                <button class="btn rounded-lg border-2 border-[#F85559] bg-transparent text-[#F85559] hover:bg-transparent hover:border-red-500">Close</button>
+                                <a class="btn rounded-lg bg-[#F85559] hover:bg-red-500 text-white capitalize">Buy Now</a>
+                            </div>
+                        </form>
+                    </dialog>
+                </div>
+            </div>
+            <!-- Banana card -->
+            <div class="space-y-8 text-center flex flex-col items-center rounded-lg border-2 border-[#00000010] drop-shadow-lg py-2 lg:py-6">
+                <img class="w-[130px]" src="./images/fruit9.png" alt="">
+                <h3 class="font-bold text-2xl text-[#121212]">12.90$ - 18.85$</h3>
+                <div class="h-[2px] bg-[#00000010] w-[60%]"></div>
+                <p class="">Banana</p>
+                <div>
+                    <i class="fa-solid fa-star text-[#F85559]"></i>
+                    <i class="fa-regular fa-star-half-stroke  text-[#F85559]"></i>
+                    <i class="fa-regular fa-star  text-[#F85559]"></i>
+                    <i class="fa-regular fa-star  text-[#F85559]"></i>
+                    <i class="fa-regular fa-star  text-[#F85559]"></i>
+                </div>
+                <!-- details action button -->
+                <div>
+                    <button class="text-[#F85559]" onclick="my_modal_4.showModal()">Details</button>
+                    <dialog id="my_modal_4" class="modal modal-center">
+                        <form method="dialog" class="modal-box flex flex-col justify-center items-center max-h-[450px] max-w-[400px] py-4 lg:py-8">
+                            <!-- modal Content -->
+                            <div class="flex flex-col items-center space-y-4">
+                                <img class="" src="./images/fruit9.png" alt="">
+                                <h2 class="text-3xl font-extrabold my-4">Banana</h2>
+                                <p class="text-[#18181860] ">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                <div>
+                                    <i class="fa-solid fa-star text-[#F85559]"></i>
+                                    <i class="fa-regular fa-star-half-stroke  text-[#F85559]"></i>
+                                    <i class="fa-regular fa-star  text-[#F85559]"></i>
+                                    <i class="fa-regular fa-star  text-[#F85559]"></i>
+                                    <i class="fa-regular fa-star  text-[#F85559]"></i>
+                                </div>
+                            </div>
+                            <!-- modal action button -->
+                            <div class="modal-action flex justify-evenly items-center">
+                                <button class="btn rounded-lg border-2 border-[#F85559] bg-transparent text-[#F85559] hover:bg-transparent hover:border-red-500">Close</button>
+                                <a class="btn rounded-lg bg-[#F85559] hover:bg-red-500 text-white capitalize">Buy Now</a>
+                            </div>
+                        </form>
+                    </dialog>
+                </div>
+            </div>
         </div>
         <!-- deal button -->
         <div class="mt-8 flex justify-center">
